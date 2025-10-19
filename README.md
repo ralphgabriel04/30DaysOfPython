@@ -1,45 +1,75 @@
-# 30DaysOfPython
+# 🐍 30 Days of Python Challenge
 
-Welcome to the **30DaysOfPython** project! This repository contains resources and code for two professional Python projects, designed to help you master Python through practical, real-world applications.
+Bienvenue dans mon dépôt **30 Days of Python** — un projet personnel où je relève le défi d’apprendre, pratiquer et documenter mes progrès en **Python** pendant 30 jours. 🚀
 
-## Projects
+## 🎯 Objectif
 
-### 1. Project 1: [Project Name]
-- **Description:** Briefly describe the purpose and goals of your first professional project.
-- **Features:**
-    - Feature 1
-    - Feature 2
-    - Feature 3
-- **Technologies:** Python, [Other libraries/tools]
+Ce challenge a pour but de renforcer mes compétences en programmation Python à travers des exercices quotidiens couvrant :
 
-### 2. Project 2: [Project Name]
-- **Description:** Briefly describe the purpose and goals of your second professional project.
-- **Features:**
-    - Feature 1
-    - Feature 2
-    - Feature 3
-- **Technologies:** Python, [Other libraries/tools]
+* Les bases du langage (variables, types, opérateurs, boucles, conditions)
+* Les structures de données (listes, tuples, sets, dictionnaires)
+* Les fonctions et modules
+* Les notions avancées : fichiers, classes, exceptions, librairies, etc.
+* Et surtout, la **pratique quotidienne** 💪
 
-## Getting Started
+Chaque dossier (`Day_01`, `Day_02`, etc.) contient :
 
-1. Clone the repository:
-     ```bash
-     git clone https://github.com/[your-username]/FullStack_RoadMap.git
-     ```
-2. Navigate to the project directory:
-     ```bash
-     cd 30DaysOfPython/30DaysOfPython
-     ```
-3. Follow the instructions in each project's folder to set up and run the code.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Author
-
-- [Your Name](https://github.com/[your-username])
+* Le code source (`.py`) des exercices du jour
 
 ---
 
-Feel free to customize each section with specific details about your projects!
+## 📚 Progression actuelle
+
+| Jour         | Thème                           | Statut   |
+| ------------ | ------------------------------- | -------- |
+| ✅ **Day 1**  | Introduction à Python           | Terminé  |
+| ✅ **Day 2**  | Variables et types              | Terminé  |
+| ✅ **Day 3**  | Opérateurs                      | Terminé  |
+| 🔥 **Day 4** | Strings (chaînes de caractères) | Terminé  |
+| 🔜 **Day 5** | Listes                          | En cours |
+
+---
+
+## 🧩 Exemple du jour 4 — Strings
+
+Durant cette étape, j’ai appris à :
+
+* Manipuler les chaînes (`upper()`, `lower()`, `replace()`, `split()`, `join()`…)
+* Utiliser les **f-strings** et le formatage
+* Travailler avec les **index**, **slices** et **méthodes de recherche**
+* Aligner du texte proprement avec des tabulations et des formats de colonnes
+
+Une **vidéo démo** de l’exécution de l’exercice 4 sera épinglée sur mon profil LinkedIn 🎥
+
+---
+
+## 🔗 Liens utiles
+
+* 🐙 **Repo GitHub** : [GitHub](https://github.com/ralphgabriel04)
+* 💼 **Mon LinkedIn** : [Linkedin](https://www.linkedin.com/in/ralph-christian-gabriel-45092021b/)
+* 🎥 **Vidéo démo Day 4 (Strings)** : bientôt disponible !
+
+---
+
+## 🧠 À propos
+
+👨‍💻 **Auteur** : Ralph Christian Gabriel
+🎓 Étudiant en **Génie Logiciel à l’ÉTS**
+💬 Passionné par l’apprentissage continu, la pratique et le partage de connaissances.
+
+---
+
+## 🏁 Objectif final
+
+À la fin des 30 jours, je vise à :
+
+* Avoir une maîtrise solide des bases et outils du langage Python
+* Construire un petit **projet final** pour mettre tout en pratique
+* Partager mes progrès et aider d’autres apprenants à suivre le même parcours
+
+---
+
+> *“La constance bat le talent quand le talent n’est pas constant.”* 💡
+> — 30 Days of Python Challenge
+
+---

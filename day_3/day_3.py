@@ -77,7 +77,7 @@ if (7//3 == int(2.7)):
     print("7//3 is equal to 2.7")
 
 '10' == 10
-int('9.8') == 10
+int(float('9.8')) == 10
 
 # Write a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
 hours = float(input("Enter hours: "))
@@ -91,5 +91,5 @@ seconds = years * 365 * 24 * 60 * 60
 print("You have lived for ", seconds, " seconds.")
 
 for i in range(1,6):
-    print(i, i**2, i**3)
+    print(i,i**0,i**1,i**2, i**3)
     
