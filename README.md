@@ -29,8 +29,47 @@ Chaque dossier (`Day_01`, `Day_02`, etc.) contient :
 | ✅ **Day 3**  | Opérateurs                      | Terminé  |
 | ✅ **Day 4**  | Strings (chaînes de caractères) | Terminé  |
 | ✅ **Day 5**  | Lists (Listes)                  | Terminé  |
-| 🔥 **Day 6** | Tuples                          | Terminé  |
-| 🔜 **Day 7** | Sets                            | En cours |
+| ✅ **Day 6**  | Tuples                          | Terminé  |
+| 🔥 **Day 7** | Sets (Ensembles)                | Terminé  |
+| 🔜 **Day 8** | Dictionaries                    | En cours |
+
+---
+
+## 🧩 Exemple du jour 7 — Sets (Ensembles)
+
+Aujourd’hui, j’ai exploré les **sets** en Python, des structures de données puissantes permettant de stocker des éléments **uniques** et **non ordonnés**. 🔥
+
+### 📘 Ce que j’ai appris :
+
+* Créer un **set** avec `{}` ou `set()`
+* Ajouter des éléments avec `add()` et `update()`
+* Supprimer des éléments avec `remove()` et `discard()` (et comprendre leur différence ⚠️)
+* Utiliser les principales **opérations d’ensemble** :
+
+  * `union()` → fusionner deux ensembles
+  * `intersection()` → trouver les éléments communs
+  * `difference()` → trouver les éléments exclusifs
+  * `symmetric_difference()` → éléments présents dans un seul des deux ensembles
+* Vérifier les relations entre ensembles :
+
+  * `issubset()` / `issuperset()` / `isdisjoint()`
+* Convertir une **liste en set** pour supprimer les doublons
+* Compter le **nombre de mots uniques** dans une phrase à l’aide de `split()` et `set()`
+
+### ⚙️ Les difficultés rencontrées :
+
+J’ai découvert que `remove()` lève une erreur si l’élément n’existe pas dans l’ensemble, tandis que `discard()` ne le fait pas.
+Ce détail m’a aidé à mieux comprendre la **gestion des erreurs** en Python. 🧠
+
+### 🍎 Exemple concret :
+
+J’ai manipulé des ensembles d’entreprises (`it_companies`), de nombres (`A` et `B`) et de valeurs d’âges.
+J’ai pu observer comment les sets éliminent automatiquement les doublons et facilitent les comparaisons mathématiques.
+
+Enfin, j’ai analysé la phrase :
+
+> “I am a teacher and I love to inspire and teach people”
+> et identifié **le nombre de mots uniques** grâce à la puissance des ensembles. 💬
 
 ---
 
@@ -81,23 +120,10 @@ Lors de cette journée, j’ai exploré en profondeur les **listes Python**, une
 Durant mes exercices, j’ai fait face à plusieurs erreurs qui m’ont aidé à mieux comprendre Python :
 
 * ❌ **`TypeError: 'list' object is not callable`** → j’utilisais des `()` au lieu de `[]` pour accéder aux éléments.
-* ❌ **`AttributeError: 'list' object has no attribute 'min'`** → j’ai appris qu’il faut utiliser les fonctions **intégrées** `min()` et `max()` au lieu de méthodes inexistantes.
-* ❌ Un `print(ages.sort())` qui retournait `None` → parce que `.sort()` trie la liste en place et **ne retourne rien**.
+* ❌ **`AttributeError: 'list' object has no attribute 'min'`** → j’ai appris qu’il faut utiliser les fonctions **intégrées** `min()` et `max()`.
+* ❌ Un `print(ages.sort())` qui retournait `None` → car `.sort()` trie la liste en place et **ne retourne rien**.
 
 Ces erreurs m’ont forcé à mieux comprendre la **logique interne des méthodes de listes** et à faire plus attention aux détails syntaxiques.
-
----
-
-## 🧩 Exemple du jour 4 — Strings
-
-Durant cette étape, j’ai appris à :
-
-* Manipuler les chaînes (`upper()`, `lower()`, `replace()`, `split()`, `join()`…)
-* Utiliser les **f-strings** et le formatage
-* Travailler avec les **index**, **slices** et **méthodes de recherche**
-* Aligner du texte proprement avec des tabulations et des formats de colonnes
-
-Une **vidéo démo** de l’exécution de l’exercice 4 est épinglée sur mon profil LinkedIn 🎥
 
 ---
 
@@ -105,6 +131,7 @@ Une **vidéo démo** de l’exécution de l’exercice 4 est épinglée sur mon 
 
 * 🐙 **Repo GitHub** : [https://github.com/ralphgabriel04/30DaysOfPython](https://github.com/ralphgabriel04/30DaysOfPython)
 * 💼 **Mon LinkedIn** : [linkedin.com/in/ralph-christian-gabriel-45092021b](https://www.linkedin.com/in/ralph-christian-gabriel-45092021b/)
+
 ---
 
 ## 🧠 À propos
