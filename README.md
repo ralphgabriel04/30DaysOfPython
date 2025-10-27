@@ -31,8 +31,11 @@ Chaque dossier (`Day_01`, `Day_02`, etc.) contient :
 | ✅ **Day 5**  | Lists (Listes)                  | Terminé  |
 | ✅ **Day 6**  | Tuples                          | Terminé  |
 | ✅ **Day 7**  | Sets (Ensembles)                | Terminé  |
-| 🔥 **Day 8** | Dictionaries (Dictionnaires)    | Terminé  |
-| 🔜 **Day 9** | Conditionals (Conditions)       | En cours |
+|✅ **Day 8** | Dictionaries (Dictionnaires)    | Terminé  |
+| ✅ **Day 9** | Conditionals (Conditions)       | En cours |
+| ✅ **Day 10** | Loops       | En cours |
+| 🔥 **Day 11** | Functions       | Terminé |
+| 🔜 **Day 12** | Conditionals (Conditions)       | En cours |
 
 ---
 
