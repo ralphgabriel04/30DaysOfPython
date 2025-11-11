@@ -23,7 +23,7 @@
 # A decorator is a special type of higher-order function that takes another function as an argument, extends or modifies its behavior, and returns a new function. Decorators are commonly used for logging, access control, memoization, and other cross-cutting concerns in code.
 
 # Define a call function before map, filter or reduce, see examples.
-from functools import reduce, map, filter
+from functools import reduce
 def square(x):
     return x*x;
 numbers = [1, 2, 3, 4, 5]
@@ -111,11 +111,14 @@ def get_last_ten_countries():
 # Sort countries by name, by capital, by population
 # Sort out the ten most spoken languages by location.
 # Sort out the ten most populated countries.
-import countries_data
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from countries_data import countries_data
 
 # Sort countries by name
-sorted_by_name = sorted(countries_data.countries, key=lambda country: country['name'])
+sorted_by_name = sorted(countries_data, key=lambda country: country['name'])
 # Sort countries by capital
-sorted_by_capital = sorted(countries_data.countries, key=lambda country: country['capital'])
+sorted_by_capital = sorted(countries_data, key=lambda country: country['capital'])
 # Sort countries by population
-sorted_by_population = sorted(countries_data.countries, key=lambda country: country['population'], reverse=True)
+sorted_by_population = sorted(countries_data, key=lambda country: country['population'], reverse=True)

@@ -41,7 +41,10 @@ Chaque dossier (`Day_01`, `Day_02`, etc.) contient :
 | ✅ **Day 12**  | Modules                         | Terminé |
 | ✅ **Day 13**  | List Comprehension              | Terminé |
 | ✅ **Day 14**  | Higher Order Functions          | Terminé |
-| 🔜 **Day 15** | Type Errors & Debugging         | À venir |
+| ✅ **Day 15**  | Type Errors & Debugging         | Terminé |
+| ✅ **Day 16**  | Date & Time                     | Terminé |
+| ✅ **Day 17**  | Exception Handling              | Terminé |
+| 🔜 **Day 18** | Regular Expressions             | À venir |
 
 ---
 
@@ -49,125 +52,114 @@ Chaque dossier (`Day_01`, `Day_02`, etc.) contient :
 
 ---
 
-### 🗓️ **Day 9 – Conditionals (Conditions)**
+### 🧠 **Day 15 – Type Errors & Debugging**
 
 **Ce que j’ai appris :**
 
-* Utiliser les structures conditionnelles `if`, `elif`, `else`
-* Gérer des conditions combinées avec `and`, `or`, `not`
-* Comprendre l’importance de l’indentation et des blocs logiques
-* Comparer plusieurs valeurs et gérer des cas multiples
+* Identifier et corriger les erreurs courantes en Python
+* Lire et comprendre les messages d’erreur du terminal
+* Distinguer les différents types d’erreurs :
+
+  * `SyntaxError`, `NameError`, `IndexError`, `ModuleNotFoundError`
+  * `AttributeError`, `KeyError`, `TypeError`, `ImportError`, `ValueError`, `ZeroDivisionError`
 
 **Exemple :**
 
 ```python
-age = 18
-if age >= 18:
-    print("Adulte")
-else:
-    print("Mineur")
+# Exemple : TypeError
+print(4 + '3')      # ❌ Erreur : int + str impossible
+print(4 + int('3')) # ✅ Solution : conversion en entier
+```
+
+🧩 **En résumé :**
+
+> Savoir déboguer efficacement, c’est comprendre que **chaque erreur est un indice**.
+> Le message d’erreur est ton meilleur allié, pas ton ennemi !
+
+---
+
+### ⏰ **Day 16 – Python Date & Time**
+
+**Ce que j’ai appris :**
+
+* Manipuler les dates et heures avec `datetime`
+* Formater des dates avec `strftime()` et `strptime()`
+* Calculer des différences entre deux dates avec `timedelta`
+* Travailler avec `date`, `time`, `datetime`
+
+**Exemple :**
+
+```python
+from datetime import datetime, date
+
+now = datetime.now()
+print(now.strftime("%m/%d/%Y, %H:%M:%S"))
+
+today = date.today()
+new_year = date(today.year + 1, 1, 1)
+print("Time left until New Year:", new_year - today)
+```
+
+💡 *Le temps est une donnée : apprendre à le manipuler, c’est maîtriser le flux logique d’une application.*
+
+---
+
+### ⚙️ **Day 17 – Exception Handling, Packing & Unpacking**
+
+**Ce que j’ai appris :**
+
+* Gérer les erreurs avec `try`, `except`, `else`, `finally`
+* Identifier les erreurs spécifiques (`TypeError`, `ValueError`, `ZeroDivisionError`)
+* Simplifier le code avec `Exception as e` pour capturer le message d’erreur
+* Comprendre les concepts de **packing** (`*args`, `**kwargs`) et **unpacking**
+* Utiliser `enumerate()` pour obtenir l’index et `zip()` pour combiner plusieurs listes
+
+---
+
+**Exemple – Gestion d’erreur simple :**
+
+```python
+try:
+    name = input("Enter your name: ")
+    year = int(input("Enter your birth year: "))
+    print(f"Hello {name}, you are {2025 - year} years old.")
+except ValueError:
+    print("Veuillez entrer une année valide.")
+finally:
+    print("Execution terminée.")
 ```
 
 ---
 
-### 🔁 **Day 10 – Loops (Boucles)**
-
-**Ce que j’ai appris :**
-
-* Utiliser les boucles `for` et `while`
-* Parcourir des listes, tuples et dictionnaires
-* Utiliser `break`, `continue` et `else` dans les boucles
-* Créer des boucles imbriquées et des compteurs
-
-**Exemple :**
+**Exemple – Unpacking :**
 
 ```python
-for i in range(1, 6):
-    print(f"Compteur : {i}")
+names = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland', 'Estonia', 'Russia']
+
+*nordic_countries, ic, es, ru = names
+
+print("Nordic Countries:", nordic_countries)
+print("Iceland:", ic)
+print("Estonia:", es)
+print("Russia:", ru)
+```
+
+🖥️ **Résultat :**
+
+```
+Nordic Countries: ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+Iceland: Iceland
+Estonia: Estonia
+Russia: Russia
 ```
 
 ---
 
-### 🧮 **Day 11 – Functions (Fonctions)**
+💡 **En résumé :**
 
-**Ce que j’ai appris :**
-
-* Définir et appeler des fonctions avec `def`
-* Passer des arguments et retourner des valeurs
-* Gérer des arguments par défaut et des fonctions anonymes (`lambda`)
-* Comprendre la portée des variables (locale / globale)
-
-**Exemple :**
-
-```python
-def add(a, b):
-    return a + b
-
-print(add(3, 5))  # 8
-```
-
----
-
-### 📦 **Day 12 – Modules**
-
-**Ce que j’ai appris :**
-
-* Créer et importer des modules personnalisés
-* Utiliser les **modules intégrés** : `math`, `os`, `random`, `statistics`, `sys`
-* Comprendre la différence entre `import`, `from ... import ...`, et `as`
-* Générer des identifiants, des couleurs et des nombres aléatoires
-
-**Exemple :**
-
-```python
-from math import pi, sqrt
-print(pi)       # 3.141592653589793
-print(sqrt(16)) # 4.0
-```
-
----
-
-### ⚙️ **Day 13 – List Comprehension & Lambda**
-
-**Ce que j’ai appris :**
-
-* Créer des listes en une seule ligne avec des conditions
-* Appliquer des transformations rapides sur des collections
-* Créer des fonctions anonymes avec `lambda`
-* Combiner `for`, `if` et expressions dans une seule syntaxe élégante
-
-**Exemple :**
-
-```python
-squares = [x**2 for x in range(10)]
-evens = [x for x in range(20) if x % 2 == 0]
-double = lambda x: x * 2
-print(double(5))  # 10
-```
-
----
-
-### 🧠 **Day 14 – Higher Order Functions, Closures & Decorators**
-
-**Ce que j’ai appris :**
-
-* Comprendre les **higher-order functions** (fonctions qui prennent ou retournent d’autres fonctions)
-* Créer des **closures** pour garder en mémoire des variables locales
-* Construire des **décorateurs** pour modifier le comportement d’une fonction
-* Utiliser les fonctions intégrées : `map()`, `filter()`, `reduce()`
-
-**Exemple :**
-
-```python
-from functools import reduce
-
-numbers = [1, 2, 3, 4, 5]
-squared = list(map(lambda x: x**2, numbers))
-evens = list(filter(lambda x: x % 2 == 0, numbers))
-total = reduce(lambda x, y: x + y, numbers)
-
-print(squared, evens, total)  # [1, 4, 9, 16, 25] [2, 4] 15
-```
+> Les exceptions rendent ton code plus **fiable**,
+> le dépaquetage le rend plus **lisible**,
+> et leur combinaison te rend **Pythonic** 🐍✨
 
 ---
 
